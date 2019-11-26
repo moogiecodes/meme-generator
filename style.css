@@ -1,0 +1,19 @@
+html {
+  text-align: center;
+  font-size: 0.8em;
+  font-family: "Courier New", Courier, monospace;
+}
+form {
+  justify-content: left;
+  text-align: left;
+  border: 0.3em solid black;
+  width: 48vw;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.5em 2em;
+}
+input[type="text"] {
+  width: 35vw;
+  margin-left: 1em;
+}
