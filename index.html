@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Meme Generator</title>
     <LINK href="style.css" rel="stylesheet">
 </head>
@@ -13,7 +14,7 @@
         </div>
         <div>
         <p>
-            <label>Meme URL:</label><input type="text">
+            <label>Meme URL:</label><input type="text" id="memeurl">
         </p>
         <p>
             <label>Top text:</label><input type="text" maxlength="30">
@@ -28,7 +29,13 @@
 
 <body>
     <!-- Flexbox for memes -->
-
+<div class="meme-flexbox">
+    <div class="meme-wrapper"> 
+        <img id="meme1" src="https://images.unsplash.com/photo-1569576231685-8a0bb772d2f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80">
+        <div class="toptext">top text</div>
+        <div class="btmtext">bottom text</div>
+    </div>
+</div>
 
 <script src="main.js"></script>
 </body>
