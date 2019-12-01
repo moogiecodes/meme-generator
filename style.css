@@ -13,19 +13,20 @@ form {
   margin-right: auto;
   padding: 0.5em 2em;
 }
-input[type="text"] {
-  width: 35vw;
-  margin-left: 1em;
+input[type="text"],
+[type="url"] {
+  width: 32vw;
+  margin-left: 10em;
+  display: flex;
 }
 #meme-flexbox {
   display: flex;
   width: auto;
   height: auto;
-  border: 0.3em solid black; /* For temp visual */
   margin: 1em;
   align-items: center;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .meme-wrapper {
   position: relative;
