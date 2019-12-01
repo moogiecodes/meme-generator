@@ -8,19 +8,19 @@
 <header>
     <h1>Meme Generator</h1>
     <!-- Input Form -->
-    <form method="POST">
+    <form id="memeForm" method="POST">
         <div>
             <h2>Let's Begin!</h2> Fill out the form to create your own meme(s).
         </div>
         <div>
         <p>
-            <label>Meme URL:</label><input type="text" id="memeurl">
+            <label>Meme URL:</label><input type="url" id="memeurl" form="memeForm">
         </p>
         <p>
-            <label>Top text:</label><input type="text" maxlength="30">
+            <label>Top text:</label><input type="text" id="toptext-input" maxlength="30" form="memeForm">
         </p>
         <p>
-            <label>Bottom text:</label><input type="text" maxlength="30">
+            <label>Bottom text:</label><input type="text" id="btmtext-input" maxlength="30" form="memeForm">
         </p><br />
         </div>
         <input type="submit" id="generatebtn" value="Generate Meme">
@@ -29,12 +29,14 @@
 
 <body>
     <!-- Flexbox for memes -->
-<div class="meme-flexbox">
-    <div class="meme-wrapper"> 
-        <img id="meme1" src="https://images.unsplash.com/photo-1569576231685-8a0bb772d2f7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80">
-        <div class="toptext">top text</div>
-        <div class="btmtext">bottom text</div>
-    </div>
+<div id="meme-flexbox">
+
+</div>
+<!-- Template of meme wrapper to add -->
+<div id="memeTmplt" style="display:none"> 
+        <img src="" id="memepic">
+        <div class="toptext"></div>
+        <div class="btmtext"></div>
 </div>
 
 <script src="main.js"></script>
