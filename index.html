@@ -14,20 +14,19 @@
         </div>
         <div>
         <p>
-            <label>Meme URL:</label><input type="url" id="memeurl" form="memeForm">
+            <label>Meme URL:</label><input type="url" id="memeurl" required>
         </p>
         <p>
-            <label>Top text:</label><input type="text" id="toptext-input" maxlength="40" form="memeForm">
+            <label>Top text:</label><input type="text" id="toptext-input" maxlength="40" required>
         </p>
         <p>
-            <label>Bottom text:</label><input type="text" id="btmtext-input" maxlength="40" form="memeForm">
+            <label>Bottom text:</label><input type="text" id="btmtext-input" maxlength="40" required>
         </p><br />
         </div>
-        <input type="submit" id="generatebtn" value="Generate Meme">
-        <input type="button" id="removebtn" value="Remove Meme">
     </form>
+    <input type="submit" id="generatebtn" value="Generate Meme" form="memeForm">
+    <input type="button" id="removebtn" value="Remove Meme" form="memeForm">
 </header>
-
 <body>
     <!-- Flexbox for memes -->
 <div id="meme-flexbox">

@@ -4,20 +4,25 @@ html {
   font-family: "Courier New", Courier, monospace;
 }
 form {
-  justify-content: left;
   text-align: left;
-  border: 0.3em solid black;
   width: 48vw;
   height: auto;
   margin-left: auto;
   margin-right: auto;
   padding: 0.5em 2em;
+  background-color: aliceblue;
+  margin-bottom: 2vh;
 }
 input[type="text"],
 [type="url"] {
   width: 32vw;
   margin-left: 10em;
   display: flex;
+}
+input[type="submit"],
+[type="button"] {
+  justify-self: center;
+  display: inline-flex;
 }
 #meme-flexbox {
   display: flex;
