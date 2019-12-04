@@ -9,3 +9,5 @@ Features:
 - Generates meme on submission of form (max of 10 memes allowed)
 - Upon form submission, previous values in form inputs clear
 - User may remove generated memes from page
+
+Direct link to view (on Github Pages): https://moogiecodes.github.io/meme-generator/
