@@ -3,6 +3,12 @@ html {
   font-size: 0.8em;
   font-family: "Courier New", Courier, monospace;
 }
+h2 {
+  margin-bottom: 0.5em;
+}
+.instructions {
+  margin-bottom: 2em;
+}
 form {
   text-align: left;
   width: 48vw;
