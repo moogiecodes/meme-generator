@@ -23,6 +23,17 @@ input[type="submit"],
 [type="button"] {
   justify-self: center;
   display: inline-flex;
+  border: 1px lightgray solid;
+  font-family: monospace;
+  background-color: lightblue;
+  padding: 0.5em 1em;
+  margin-bottom: 2em;
+  border-radius: 3em;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover {
+  background-color: lightgray;
+  cursor: pointer;
 }
 #meme-flexbox {
   display: flex;
