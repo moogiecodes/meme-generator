@@ -1,14 +1,9 @@
 let memeCount = 0;
-let currentNode;
 
-// register event handlers and initialize currentNode
+// register event handlers
 function start() {
   var memeForm = document.getElementById("memeForm");
   memeForm.addEventListener("submit", addMeme, false);
-  var removeBtn = document.getElementById("removebtn");
-  removeBtn.addEventListener("click", removeMeme, false);
-  // initialize current node
-  currentNode = document.getElementById("meme1");
 }
 window.addEventListener("load", start, false);
 
@@ -35,20 +30,10 @@ function addMeme() {
   newMeme.id = "meme" + memeCount; // sets id of meme wrapper, can refer to delete later
   // clear form after submit
   memeForm.reset();
-  switchTo(newMeme);
 }
 
-// helper function that switches current node to new meme created
-function switchTo(newMeme) {
-  currentNode = newMeme;
-}
-
-// removes current node (last generated meme)
+// remove meme upon click
 function removeMeme() {
-  if (memeCount < 1) alert("There are no memes to remove.");
-  else {
-    var removeNode = document.getElementById("meme" + memeCount);
-    removeNode.remove();
-    --memeCount;
-  }
+  event.target.parentNode.remove();
+  memeCount--;
 }
